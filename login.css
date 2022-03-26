@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,600&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+body {
+  background-color: #f7f8fc;
+  color: #141c2c;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  margin-top: 5%;
+}
+small {
+  font-weight: 400;
+  color: #7a7e8c;
+}
+a {
+  text-decoration: none;
+  color: #2762eb;
+}
+.container {
+  background-color: white;
+  border-radius: 3px;
+  border: 20px solid #dce7ff;
+  width: 1140px;
+  max-width: 100%;
+  display: flex;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+}
+form {
+  border-right: 2px solid #ecf2ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  flex: 0.4;
+}
+.btn {
+  background-color: #141c2c;
+  border: 2px solid #141c2c;
+  border-radius: 3px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px;
+  margin: 20px 0;
+  width: 100%;
+  cursor: pointer;
+  transition: 250ms all ease-in-out;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+.form-control {
+  margin: 10px 0;
+  width: 100%;
+}
+label {
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+input:not([type="checkbox"]) {
+  background-color: transparent;
+  border: 2px solid #ecf2ff;
+  border-radius: 3px;
+  outline-color: #2762eb;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+}
+.checkbox-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.checkbox-container label {
+  color: #7a7e8c;
+  font-weight: normal;
+}
+.checkbox-container a {
+  margin-left: auto;
+}
+
+.btn-ghost {
+  background-color: transparent;
+  border-color: #ecf2ff;
+  color: #141c2c;
+}
+.btn-img {
+  width: 20px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+.features {
+  flex: 0.6;
+  padding: 40px;
+}
+.feature {
+  padding-left: 30px;
+  position: relative;
+  margin: 40px;
+}
+.feature i {
+  color: #2762eb;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+.feature h3 {
+  margin: 0;
+}
+.feature p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 5px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+}
+@media (max-width: 800px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  form {
+    flex: 1;
+    border-bottom: 2px solid #ecf2ff;
+  }
+}
